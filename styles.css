@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-pic {
+    border: solid black 1px;
+    min-width: 400px;
+    min-height: 700px;
+    height: 80%;
+    background: no-repeat center url(./images/ssbu3.jpg);
+    background-size: cover;
+}
+
+.left-pic h1 {
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
