@@ -5,21 +5,69 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    background-color: #2d4059;
+}
+
+.all-content {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    max-width: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid black 2px;
+    background-color: #eeeeee;
 }
 
 .left-pic {
-    border: solid black 1px;
-    min-width: 400px;
-    min-height: 700px;
+    flex: 2;
+    min-height: 100vh;
     height: 80%;
     background: no-repeat center url(./images/ssbu3.jpg);
     background-size: cover;
 }
 
-.left-pic h1 {
-    margin: auto;
-    color: aliceblue;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+#logo {
+    background-color: rgb(238, 238, 238, 0.35);
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 35%;
+    padding: 10px 45px;
+}
+
+.right-info {
+    flex: 3;
+    margin-left: 50px;
+}
+
+.form-input {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #ff5722;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 45px;
+}
+
+button:hover {
+    background-color: #c24d2c;
+    cursor:pointer;
 }
