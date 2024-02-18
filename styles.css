@@ -11,19 +11,14 @@ body {
 
 .all-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 70%;
     margin-top: 0;
     margin-bottom: 0;
-    border: solid black 2px;
     background-color: #eeeeee;
 }
 
 .left-pic {
     flex: 2;
-    min-height: 100vh;
-    height: 80%;
     background: no-repeat center url(./images/ssbu3.jpg);
     background-size: cover;
 }
@@ -39,18 +34,38 @@ body {
 
 .right-info {
     flex: 3;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.top-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: ;
 }
 
 .form-input {
-    min-height: 80vh;
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: 0;
+    box-shadow: 0 10px 4px -4px #2d4059, 0 -10px 6px -6px #2d4059;
+}
+
+form > p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 ul {
     display: flex;
+    justify-content: space-around;
     padding-left: 0;
     list-style: none;
 }
@@ -58,6 +73,25 @@ ul {
 li {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    padding: 1rem;
+}
+
+.log-in-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    margin-bottom: 6rem;
+}
+a, a:link {
+    color: #ff5722;
+}
+
+a:active, a:hover, a:visited {
+    color: #c24d2c;
 }
 
 button {
