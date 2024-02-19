@@ -15,6 +15,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     background-color: #eeeeee;
+    box-shadow: 0 10px 6px 6px #c24d2c;
 }
 
 .left-pic {
@@ -63,6 +64,10 @@ form > p {
     margin-bottom: 2rem;
 }
 
+em {
+    font-size: 10px;
+}
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -77,6 +82,22 @@ li {
     font-size: 14px;
     font-family: 'Courier New', monospace;
     padding: 1rem;
+}
+
+label {
+    padding-bottom: 5px;
+}
+
+input {
+    border-radius: 3px;
+}
+
+input:invalid {
+    box-shadow: 1px 1px 0 1px red;
+}
+
+input:valid {
+    box-shadow: 1px 1px 0 1px green;
 }
 
 .log-in-submit {

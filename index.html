@@ -23,34 +23,36 @@
             <div class="form-input">
                 
                 <form action="index.html" method="get">
-                    <p>Let's do this!</p>
+                    <p>Let's do this! <br>
+                       <em>Required fields marked with *</em> 
+                    </p>
                     <ul>
                         <div class="first-row">
                             <li>
-                                <label for="first_name">First Name</label>
-                                <input type="text" name="first_name" id="first_name">
+                                <label for="first_name">First Name *</label>
+                                <input type="text" name="first_name" id="first_name" required>
                             </li>
                             <li>
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email">
+                                <label for="email">E-mail *</label>
+                                <input type="email" name="email" id="email" required>
                             </li>
                             <li>
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
+                                <label for="password">Password *</label>
+                                <input type="password" name="password" id="password" required>
                             </li>
                         </div>
                         <div class="second-row">
                             <li>
-                                <label for="last_name">Last Name</label>
-                                <input type="text" name="last_name" id="last_name">
+                                <label for="last_name">Last Name *</label>
+                                <input type="text" name="last_name" id="last_name" required>
                             </li>                   
                             <li>
                                 <label for="phone_num">Phone Number</label>
-                                <input type="number" name="phone_num" id="phone_num">
+                                <input type="tel" name="phone_num" id="phone_num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             </li>
                             <li>
-                                <label for="passcheck">Confirm Password</label>
-                                <input type="password" name="passcheck" id="passcheck">
+                                <label for="passcheck">Confirm Password *</label>
+                                <input type="password" name="passcheck" id="passcheck" required>
                             </li>
                         </div>
                     </ul>
